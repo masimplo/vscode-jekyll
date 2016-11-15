@@ -1,0 +1,100 @@
+{
+  "name": "jekyll-vscode",
+  "displayName": "jekyll-vscode",
+  "description": "",
+  "version": "0.0.1",
+  "publisher": "Michael",
+  "engines": {
+    "vscode": "^1.5.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:extension.newPost"
+  ],
+  "contributes": {
+    "commands": [
+      {
+        "title": "Jekyll: New post",
+        "command": "extension.newPost"
+      },
+      {
+        "title": "Jekyll: New post from template",
+        "command": "extension.newPostFromTemplate"
+      },
+      {
+        "title": "Jekyll: Remove post",
+        "command": "extension.removePost"
+      },
+      {
+        "title": "Jekyll: Open post",
+        "command": "extension.openPost"
+      },
+      {
+        "title": "Jekyll: New draft",
+        "command": "extension.newDraft"
+      },
+      {
+        "title": "Jekyll: New draft from template",
+        "command": "extension.newDraftFromTemplate"
+      },
+      {
+        "title": "Jekyll: Promote draft to post",
+        "command": "extension.promoteDraft"
+      },
+      {
+        "title": "Jekyll: Remove draft",
+        "command": "extension.removeDraft"
+      },
+      {
+        "title": "Jekyll: Open draft",
+        "command": "extension.openDraft"
+      },
+      {
+        "title": "Jekyll: New template",
+        "command": "extension.newTemplate"
+      },
+      {
+        "title": "Jekyll: Edit template",
+        "command": "extension.editTemplate"
+      },
+      {
+        "title": "Jekyll: Remove template",
+        "command": "extension.removeTemplate"
+      },
+      {
+        "title": "Jekyll: Browse templates...",
+        "command": "extension.browseTemplate"
+      },
+      {
+        "title": "Jekyll: Edit _config.yml",
+        "command": "extension.editConfig"
+      },
+      {
+        "title": "Jekyll: Insert current date",
+        "command": "extension.insertDate"
+      },
+      {
+        "title": "Jekyll: Insert upload",
+        "command": "extension.insertUpload"
+      }
+    ]
+  },
+  "main": "./out/src/extension",
+  "scripts": {
+    "vscode:prepublish": "tsc -p ./",
+    "compile": "tsc -watch -p ./",
+    "postinstall": "node ./node_modules/vscode/bin/install"
+  },
+  "devDependencies": {
+    "typescript": "^2.0.3",
+    "vscode": "^1.0.0",
+    "mocha": "^2.3.3",
+    "@types/node": "^6.0.40",
+    "@types/mocha": "^2.2.32"
+  },
+  "dependencies": {
+    "slug": "^0.9.1"
+  }
+}
