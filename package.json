@@ -11,17 +11,15 @@
     "Other"
   ],
   "activationEvents": [
-    "onCommand:extension.newPost"
+    "workspaceContains:config.yml",
+    "onCommand:extension.newPost",
+    "onCommand:extension.newDraft"
   ],
   "contributes": {
     "commands": [
       {
         "title": "Jekyll: New post",
         "command": "extension.newPost"
-      },
-      {
-        "title": "Jekyll: New post from template",
-        "command": "extension.newPostFromTemplate"
       },
       {
         "title": "Jekyll: Remove post",
@@ -34,10 +32,6 @@
       {
         "title": "Jekyll: New draft",
         "command": "extension.newDraft"
-      },
-      {
-        "title": "Jekyll: New draft from template",
-        "command": "extension.newDraftFromTemplate"
       },
       {
         "title": "Jekyll: Promote draft to post",
